@@ -1,0 +1,15 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  annotations:
+    openshift.io/display-name: testjul16-8-test-rhoai
+  name: testjul16-8-test-rhoai
+  labels:
+    opendatahub.io/dashboard: 'true'
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  volumeMode: Filesystem
